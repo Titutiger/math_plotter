@@ -3,6 +3,7 @@ from matplotlib.animation import FuncAnimation
 import math
 from typing import Tuple, List, Callable, Any, Optional
 
+# Please credit me since I am still a student, thank you ;D
 
 class Expression:
     @staticmethod
