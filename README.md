@@ -1,27 +1,37 @@
 # Disclamer!
 While yes, you are permitted to use this at your will, I would really appreciate it if you would tag me / credit me.
 Thanking you / you lot in advance!!
-
+___
 # Overview
 
+1. The `Expression.eval_expr(...)` adds `var: int` which can be set as 1 or 2, indicating the number of variables.
+For a single variable experssion, the var is by default set to 1.
+If you want two variables, then: `Expression.eval_expr(... , var = 2)`
+
+2. The graphing system now has converged to only one function: `Graphing.plot(...)` for better usage.
+Herein, centered, static and speed are set to False, False and 50 respectively.
+For two var expressions, z is also required but by default is set to `None`.
+___
 ## Format
+> This is for version 1.1 (1_1)
 
->>> expr = lambda x: <input expression here> // for example: (x**2) + 2 * x + 5
->>> x, y = evaluate_expression(expr) // in here, loops and negative are 10 and False respectively by default.
+```python
+expr = lambda x: (x**2) + 3*x + 5
+x, y = Expression.eval_expr(expr) # params for negative and loops
+Graphing.plot(x, y) # animated uncentered
+Graphing.plot(x, y, static=True) # static uncentered
+----//-------(x, b, ..., centered = True) # ... centered
+```
+___
+## Outputs:
 
-Now, think of expr as f(x). var_x here is f(x)...
-Making var_x = 5 as f(5).
-And var_y is the output of f(x).
 
-Now, for making the graph, there are 2 types:
-Static (centered / uncentered)
-Animated (centered / uncentered)
-// Currently, these are 2 different functions, in later models, I will update it so that 'centered' is a bool param in the main function.
-
->>> Graphing.animate_graph(x, y) // for uncentered animated graph.
->>> Graphing.static_graph(x, y) // for uncentered animated graph.
-// Please refer to the docstrings for centered ones.
-
+With `log10(x) + 2`:
+`Warning at x=0: math domain error; setting value=1
+[0, 1, 2, 3, ... 99, 100] [1.0, 2.0, 2.3010299956639813, ... 3.9956351945975497, 4.0]
+`
+Here, the first list is `x` and the next one is `y`.
+___
 ## Purpose
 
 When I was in school, it was hard to visulise graphs for many of the students. And when we did plot them, it was only for 2 or 5 points.
