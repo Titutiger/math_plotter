@@ -132,7 +132,7 @@ class Graphing:
                     value_text.set_text(f"x = {curr_x:.3f}\ny = {curr_y:.3f}")
                 return animated_plot, value_text
 
-            FuncAnimation(
+            anim = FuncAnimation(
                 fig=fig,
                 func=update,
                 frames=len(x) + 1,
