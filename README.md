@@ -28,6 +28,13 @@ Graphing.plot(x, y, static=True) # static uncentered
 `v1.2 implements new features like math and physics concepts.`
 
 `Things like projectile path, complex operations and more  will be added.`
+- [x] Ideas on what to add
+- [x] Implementation and practical math
+- [x] Developing / coding
+- [ ] Testing, formatting and compatibility checking
+- [ ] Documentation (docstrings, repo, etc...)
+- [ ] Final thoughts (small tweaks)
+- [ ]  Release!!!
 
 ___
 ## Outputs:
