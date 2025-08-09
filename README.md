@@ -22,6 +22,13 @@ Graphing.plot(x, y) # animated uncentered
 Graphing.plot(x, y, static=True) # static uncentered
 ----//-------(x, b, ..., centered = True) # ... centered
 ```
+
+> Upcoming v1.2
+
+`v1.2 implements new features like math and physics concepts.`
+
+`Things like projectile path, complex operations and more  will be added.`
+
 ___
 ## Outputs:
 
