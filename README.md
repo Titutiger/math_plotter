@@ -16,11 +16,8 @@ ___
 > This is for version 1.1 (1_1)
 
 ```python
-expr = lambda x: (x**2) + 3*x + 5
-x, y = Expression.eval_expr(expr) # params for negative and loops
-Graphing.plot(x, y) # animated uncentered
-Graphing.plot(x, y, static=True) # static uncentered
-----//-------(x, b, ..., centered = True) # ... centered
+# for the format and implementation, please have a look at the .ipynb file(s)
+# for a clearer sense of what this does.
 ```
 
 > Upcoming v1.2
@@ -36,15 +33,6 @@ Graphing.plot(x, y, static=True) # static uncentered
 - [ ] Final thoughts (small tweaks)
 - [ ]  Release!!!
 
-___
-## Outputs:
-
-
-With `log10(x) + 2`:
-`Warning at x=0: math domain error; setting value=1
-[0, 1, 2, 3, ... 99, 100] [1.0, 2.0, 2.3010299956639813, ... 3.9956351945975497, 4.0]
-`
-Here, the first list is `x` and the next one is `y`.
 ___
 ## Purpose
 
